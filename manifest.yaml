@@ -1,0 +1,24 @@
+# Wskdeploy manifest for hello-world
+
+# Deployment using this manifest file creates the following OpenWhisk components:
+#   Package:  openwhisk-helloworld
+#   Action:   openwhisk-helloworld/helloworld.js
+
+packages:
+  testpackage:
+    version: 1.0
+    license: Apache-2.0
+    namespace: _
+    actions:
+      nodejsDemoAction3:
+        function: actions/nodejs/remote.js
+        runtime: nodejs:6
+  newpackage:
+    version: 1.0
+    license: Apache-2.0
+    namespace: _
+    actions:
+      javaDemoAction3:
+        function: actions/java/target/demo-function.jar
+        main: com.example.FunctionApp
+        runtime: java:8
