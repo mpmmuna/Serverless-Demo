@@ -5,7 +5,7 @@
 #   Action:   openwhisk-helloworld/helloworld.js
 
 packages:
-  javaPackage:
+  nodePackage:
     version: 1.0
     license: Apache-2.0
     namespace: _
@@ -13,7 +13,7 @@ packages:
       nodejsDemo:
         function: actions/nodejs/remote.js
         runtime: nodejs:6
-  nodePackage:
+  javaPackage:
     version: 1.0
     license: Apache-2.0
     namespace: _
