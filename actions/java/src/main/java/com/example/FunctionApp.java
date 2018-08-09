@@ -25,7 +25,7 @@ import com.google.gson.JsonObject;
 public class FunctionApp {
   public static JsonObject main(JsonObject args) {
     JsonObject response = new JsonObject();
-    response.addProperty("message", "Hello! Welcome to WSO2Con Asia 2018 Started");
+    response.addProperty("message", "Hello! Welcome to WSO2Con Asia 2018");
     return response;
   }
 }
